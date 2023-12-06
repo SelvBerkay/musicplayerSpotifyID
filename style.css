@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #FFFBF5;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-size: 25px;
+}
+
+.container img {
+  width: 100%;
+  height: 30%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.musicdetails {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  color: black;
+}
+
+.singer {
+  font-size: 15px;
+}
+
+.icons {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons i {
+  color: white;
+  font-size: 15px; 
+}
+
+.icons div {
+  background-color: blue;
+  border-radius: 10px;
+  width: 36px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.progressbardiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 3px;
+  margin-bottom: 20px;
+}
+
+
+.progressbar {
+  height: 4px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.time {
+  font-size: 12px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.currenttime {
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.soundcontrols {
+  display: flex;
+  gap: 10px;
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+}
+
+.soundicon {
+  cursor: pointer;
+}
+
+.musiclist {
+  background-color: transparent;
+  width: 350px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translate(-50%);
+  max-height: 100px;
+  overflow: hidden;
+  overflow-y: scroll;
+  scrollbar-width: auto;
+  scrollbar-color: #030303;
+  display: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;  
+}
+.musiclist::-webkit-scrollbar {
+  width: 5px;
+}
+.musiclist::-webkit-scrollbar-track {
+  background: transparent;
+}
+.musiclist::-webkit-scrollbar-thumb {
+  background-color: #030303;
+  border-radius: 10px;
+}
+
+.music {
+  border: 1px solid black;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.dropdownmenu {
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+  color: blue;
+  cursor: pointer;
+}
+
+.display {
+  display: block;
+}
+
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 5px;
+    font-size: 15px;
+    width: 300px;
+    padding: 10px;
+    font-weight: bolder;
+  }
+
+  .musiclist {
+    width: 200px;
+  }
+}
+
+#sanatciidarama {
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translate(-45%);
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+#sanatciid {
+  padding: 10px;
+  font-weight: 800;
+  font-weight: bolder;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+#sanatciid:focus {
+  outline: 3px solid black;
+}
+
+.searchbtn {
+  padding: 10px;
+  color: whitesmoke;
+  background-color: blue;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
